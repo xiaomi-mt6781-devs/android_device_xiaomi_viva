@@ -7,14 +7,21 @@ persist.vendor.wfc.sys_wfc_support=1
 persist.sys.mdlog_dumpback=2
 
 # Dex / Dalvik
-persist.vm.stackdump.threshold=0
-dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3
-dalvik.vm.dex2oat-cpu-set=0,1,2,3
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
 persist.device_config.runtime_native.usap_pool_enabled=false
 persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
 persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
 persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=verify
+pm.dexopt.ab-ota=speed-profile
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.boot-dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
 
 # Misc
 ro.actionable_compatible_property.enabled=true
@@ -48,7 +55,4 @@ mediatek.wlan.ctia=0
 ro.hardware.wlan.dbs=0
 ro.mediatek.wlan.p2p=1
 ro.mediatek.wlan.wsc=1
-
-# Zygote
-ro.zygote.preload.enable=0
 
