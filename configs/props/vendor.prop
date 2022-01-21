@@ -5,6 +5,7 @@ debug.als.logs=1
 debug.mediatek.disp_decompress=1
 debug.mtk_tflite.target_nnapi=29
 debug.sf.disable_backpressure=1
+debug.renderengine.backend=skiaglthreaded
 debug.sf.enable_hwc_vds=0
 debug.svi.logs=1
 drm.service.enabled=true
