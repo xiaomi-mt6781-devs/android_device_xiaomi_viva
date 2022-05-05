@@ -1099,20 +1099,7 @@ vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/thermal.mt6781.so
 
 # WiFi
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
--vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
-vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
-vendor/bin/hostapd_cli
-vendor/bin/wpa_cli
-vendor/etc/init/hostapd.android.rc
-vendor/lib/libwpa_client.so
-vendor/lib64/libwifi-hal.so
-vendor/lib64/libwpa_client.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
 # Xiaomi
 -vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
