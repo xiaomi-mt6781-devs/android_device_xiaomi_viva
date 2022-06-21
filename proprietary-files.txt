@@ -1,7 +1,6 @@
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
-vendor/bin/hw/android.hardware.boot@1.2-service
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
 vendor/bin/hw/android.hardware.gnss-service.mediatek
@@ -328,7 +327,6 @@ vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
-vendor/etc/init/android.hardware.boot@1.2-service.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
@@ -1103,7 +1101,6 @@ vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
-vendor/lib/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.ir@1.0-impl.so
@@ -1209,9 +1206,6 @@ vendor/lib/android.hardware.bluetooth.audio@2.0.so
 vendor/lib/android.hardware.bluetooth.audio@2.1.so
 vendor/lib/android.hardware.bluetooth@1.0.so
 vendor/lib/android.hardware.bluetooth@1.1.so
-vendor/lib/android.hardware.boot@1.0.so
-vendor/lib/android.hardware.boot@1.1.so
-vendor/lib/android.hardware.boot@1.2.so
 vendor/lib/android.hardware.drm@1.0.so
 vendor/lib/android.hardware.drm@1.1.so
 vendor/lib/android.hardware.drm@1.2.so
@@ -1887,7 +1881,6 @@ vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
-vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
@@ -1993,9 +1986,6 @@ vendor/lib64/android.hardware.bluetooth.audio@2.0.so
 vendor/lib64/android.hardware.bluetooth.audio@2.1.so
 vendor/lib64/android.hardware.bluetooth@1.0.so
 vendor/lib64/android.hardware.bluetooth@1.1.so
-vendor/lib64/android.hardware.boot@1.0.so
-vendor/lib64/android.hardware.boot@1.1.so
-vendor/lib64/android.hardware.boot@1.2.so
 vendor/lib64/android.hardware.camera.common@1.0.so
 vendor/lib64/android.hardware.camera.device@1.0.so
 vendor/lib64/android.hardware.camera.device@3.2.so
