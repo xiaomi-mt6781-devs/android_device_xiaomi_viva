@@ -461,7 +461,6 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.aee.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
