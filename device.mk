@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session.vendor \
     tinymix
 
+# In call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Binder
 PRODUCT_PACKAGES += \
     libhidltransport \
