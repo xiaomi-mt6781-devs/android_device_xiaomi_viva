@@ -220,6 +220,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1.vendor:64 \
     android.hardware.graphics.composer@2.1-resources.vendor:64
 
+# VNDK 32 libsutils (required by PQ)
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
