@@ -121,6 +121,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_co
 
 # Properties
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(CONFIGS_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 TARGET_PRODUCT_PROP += $(CONFIGS_PATH)/props/product.prop
 
