@@ -440,7 +440,8 @@ PRODUCT_PACKAGES += \
 	SettingsResOverlayViva \
     SystemUIOverlayViva \
     TelephonyOverlayViva \
-	CarrierConfigOverlayViva
+	CarrierConfigOverlayViva \
+	TetheringOverlayViva
 
 # FSTab
 PRODUCT_PACKAGES += \
