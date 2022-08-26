@@ -466,6 +466,7 @@ vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.mtk.vdec.waitkeyframeforplay=9
 persist.log.tag.gralloc4=S
 
+debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 
 import /vendor/etc/boardid_props/build_${ro.boot.board_id}.prop
