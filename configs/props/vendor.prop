@@ -463,5 +463,6 @@ vendor.connsys.driver.ready=no
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 vendor.mtk.vdec.waitkeyframeforplay=9
+persist.log.tag.gralloc4=S
 
 import /vendor/etc/boardid_props/build_${ro.boot.board_id}.prop
