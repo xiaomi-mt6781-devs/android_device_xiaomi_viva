@@ -11,6 +11,9 @@
 # Charge
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.charge@1\.0-service u:object_r:mtk_hal_charge_exec:s0
 
+# Health
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mt6781 u:object_r:hal_health_default_exec:s0
+
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi   u:object_r:hal_light_default_exec:s0
 
