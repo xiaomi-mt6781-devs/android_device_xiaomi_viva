@@ -98,3 +98,5 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+include vendor/xiaomi/viva/BoardConfigVendor.mk
