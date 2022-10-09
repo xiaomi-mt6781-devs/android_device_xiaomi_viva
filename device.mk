@@ -70,3 +70,6 @@ TARGET_SCREEN_DENSITY := 440
 
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
+
+# Inherit our proprietary vendor
+$(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
