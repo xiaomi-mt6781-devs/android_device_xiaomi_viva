@@ -72,6 +72,10 @@ TARGET_SCREEN_DENSITY := 440
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey
+
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
