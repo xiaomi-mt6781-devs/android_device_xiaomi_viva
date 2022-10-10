@@ -54,8 +54,8 @@ if [ -z "${SRC}" ]; then
 fi
 
 function blob_fixup() {
-    #case "${1}" in
-    #esac
+    case "${1}" in
+    esac
 }
 
 # Initialize the helper
