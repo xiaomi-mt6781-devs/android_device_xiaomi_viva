@@ -4,8 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Helpful vars
 DEVICE_PATH := device/xiaomi/viva
 KERNEL_PATH := device/xiaomi/viva-kernel
+
+# Broken build rules
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture flags
 TARGET_ARCH := arm64
@@ -29,6 +33,7 @@ TARGET_OTA_ASSERT_DEVICE := viva
 TARGET_BOOTLOADER_BOARD_NAME := viva
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6781
+BOARD_VENDOR := xiaomi
 
 # Prebuilts
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
@@ -82,6 +87,11 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 # TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6781
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
 # Vendor Security Patch level
 VENDOR_SECURITY_PATCH := 2022-02-05
