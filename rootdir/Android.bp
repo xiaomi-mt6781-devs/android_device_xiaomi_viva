@@ -86,3 +86,9 @@ prebuilt_etc {
     src: "etc/fstab.mt6781",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.rc",
+    src: "etc/ueventd.rc",
+    vendor: true
+}

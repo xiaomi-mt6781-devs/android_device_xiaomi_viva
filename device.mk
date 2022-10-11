@@ -172,7 +172,8 @@ PRODUCT_PACKAGES += \
     init.mt6781.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init_connectivity.rc
+    init_connectivity.rc \
+    ueventd.rc
 
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
