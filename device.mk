@@ -175,6 +175,11 @@ PRODUCT_PACKAGES += \
     init_connectivity.rc \
     ueventd.rc
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/input/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/configs/input/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl \
+    $(LOCAL_PATH)/configs/input/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
