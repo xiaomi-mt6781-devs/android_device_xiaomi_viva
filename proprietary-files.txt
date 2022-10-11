@@ -67,13 +67,11 @@ vendor/bin/charon
 vendor/bin/chipinfo
 vendor/bin/dconfig
 vendor/bin/dexecutor
-vendor/bin/dmabuf_dump
 vendor/bin/dmc_core
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
 vendor/bin/epdg_wod
-vendor/bin/factory
 vendor/bin/fidoca
 vendor/bin/fpsgo
 vendor/bin/fuelgauged
@@ -95,9 +93,7 @@ vendor/bin/loghidlvendorservice
 vendor/bin/logwrapper
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
-vendor/bin/meta_tst
 vendor/bin/mi_thermald
-vendor/bin/microcom
 vendor/bin/mlipayd@1.1
 vendor/bin/mnld
 vendor/bin/mrdump_tool
@@ -301,10 +297,6 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
-vendor/etc/init/hw/factory_init.connectivity.common.rc
-vendor/etc/init/hw/factory_init.connectivity.rc
-vendor/etc/init/hw/factory_init.project.rc
-vendor/etc/init/hw/factory_init.rc
 vendor/etc/init/hw/init.aee.rc
 vendor/etc/init/hw/init.ago.rc
 vendor/etc/init/hw/init.cgroup.rc
@@ -316,12 +308,6 @@ vendor/etc/init/hw/init.mt6781.usb.rc
 vendor/etc/init/hw/init.project.rc
 vendor/etc/init/hw/init.sensor_1_0.rc
 vendor/etc/init/hw/init_connectivity.rc
-vendor/etc/init/hw/meta_init.connectivity.common.rc
-vendor/etc/init/hw/meta_init.connectivity.rc
-vendor/etc/init/hw/meta_init.modem.rc
-vendor/etc/init/hw/meta_init.project.rc
-vendor/etc/init/hw/meta_init.rc
-vendor/etc/init/hw/multi_init.rc
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
