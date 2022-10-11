@@ -10,6 +10,7 @@ KERNEL_PATH := device/xiaomi/viva-kernel
 
 # Broken build rules
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Architecture flags
 TARGET_ARCH := arm64
