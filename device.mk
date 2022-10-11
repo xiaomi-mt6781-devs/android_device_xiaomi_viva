@@ -93,6 +93,24 @@ PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
    android.hardware.health@2.1-impl
 
+# FSTab
+PRODUCT_PACKAGES += \
+    fstab.mt6781
+
+# Init
+PRODUCT_PACKAGES += \
+    init.aee.rc \
+    init.ago.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6781.rc \
+    init.mt6781.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init_connectivity.rc
+
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
