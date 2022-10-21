@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init_connectivity.rc \
-    ueventd.rc
+    ueventd.mt6781.rc
 
 # Input
 PRODUCT_COPY_FILES += \
