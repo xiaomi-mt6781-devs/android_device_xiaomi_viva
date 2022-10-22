@@ -292,6 +292,13 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2.vendor \
     android.hardware.neuralnetworks@1.3.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    android.hardware.nfc@1.2-service.pn8x \
+    com.android.nfc_extras
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
@@ -319,6 +326,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
 	hardware/xiaomi \
+    vendor/nxp/nfc
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
