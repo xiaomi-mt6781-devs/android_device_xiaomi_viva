@@ -388,6 +388,13 @@ PRODUCT_COPY_FILES += \
     $(foreach file,$(wildcard $(LOCAL_PATH)/configs/wifi/*), \
         $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/wifi/, $(notdir $(file))) )
 
+# Other common
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor \
+    libruy.vendor \
+	libmemunreachable \
+	libmemunreachable.vendor
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
