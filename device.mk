@@ -328,6 +328,16 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service.p73 \
     android.hardware.secure_element@1.2-service.p73.xml
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.1-service.multihal \
+    libsensorndkbridge
+
+# Sensors MultiHAL config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
