@@ -299,6 +299,12 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.pn8x \
     com.android.nfc_extras
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
