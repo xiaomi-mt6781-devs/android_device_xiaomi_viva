@@ -205,6 +205,14 @@ PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.0.vendor \
     android.hardware.dumpstate@1.1.vendor
 
+# Display
+PRODUCT_PACKAGES += \
+    libhwc2on1adapter.vendor \
+    libhwc2onfbadapter.vendor \
+    libdrm.vendor \
+    android.hardware.graphics.composer@2.1.vendor \
+    android.hardware.graphics.composer@2.1-resources.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
