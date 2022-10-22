@@ -444,6 +444,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
+# Device overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayViva \
+	SettingsResOverlayViva \
+    SystemUIOverlayViva
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
