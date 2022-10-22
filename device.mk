@@ -259,6 +259,10 @@ PRODUCT_PACKAGES += \
     libkeymaster_portable.vendor \
     libpuresoftkeymasterdevice.vendor
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
