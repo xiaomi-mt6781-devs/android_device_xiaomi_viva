@@ -447,7 +447,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.aee.rc \
-    init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
