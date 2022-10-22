@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
@@ -257,7 +261,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/input/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl \
     $(LOCAL_PATH)/configs/input/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
 PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH)
+	$(LOCAL_PATH) \
+	hardware/xiaomi \
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
