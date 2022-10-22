@@ -17,5 +17,5 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 PRODUCT_NAME := arrow_viva
 PRODUCT_DEVICE := viva
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Note 11 Pro 4G
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi Note 11 Pro 4G
