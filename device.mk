@@ -436,6 +436,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.mediatek.hardware.videotelephony@1.0.vendor
 
+# Xiaomi Interfaces
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
