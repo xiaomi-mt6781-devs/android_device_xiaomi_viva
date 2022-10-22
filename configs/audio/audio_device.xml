@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
     <card name="mt6781mt6366" />
     <mixercontrol>
-        <versioncontrol value="1.01">
-        </versioncontrol>
+        <versioncontrol value="1.01"></versioncontrol>
         <!-- These are the initial mixer settings -->
         <kctl name="Audio_Speaker_class_Switch" value="CLASSAB" />
         <!--headphone output-->
@@ -24,10 +23,8 @@
             <kctl name="HPL Mux" value="Open" />
         </path>
         <!--receiver output-->
-        <path name="receiver_output" value="turnon">
-        </path>
-        <path name="receiver_output" value="turnoff">
-        </path>
+        <path name="receiver_output" value="turnon"></path>
+        <path name="receiver_output" value="turnoff"></path>
         <!--2-in-1 speaker output-->
         <path name="two_in_one_speaker_output" value="turnon">
             <!--  ALPS05007528 begin -->
@@ -340,7 +337,7 @@
         <path name="I2S5_HD_OFF" value="setting">
             <kctl name="I2S5_HD_Mux" value="Normal" />
         </path>
-       <!--AP side control-->
+        <!--AP side control-->
         <path name="PLAYBACK1_TO_ADDA_DL" value="turnon">
             <kctl name="ADDA_DL_CH1 DL1_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 DL1_CH2" value="1" />
@@ -793,10 +790,8 @@
             <kctl name="I2S5_CH1 GAIN1_OUT_CH1" value="0" />
             <kctl name="I2S5_CH2 GAIN1_OUT_CH2" value="0" />
         </path>
-        <path name="MRG_TO_ADDA_I2S" value="turnon">
-        </path>
-        <path name="MRG_TO_ADDA_I2S" value="turnoff">
-        </path>
+        <path name="MRG_TO_ADDA_I2S" value="turnon"></path>
+        <path name="MRG_TO_ADDA_I2S" value="turnoff"></path>
         <path name="MD1_TO_ADDA_DL" value="turnon">
             <kctl name="ADDA_DL_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 PCM_2_CAP_CH1" value="1" />
@@ -1352,7 +1347,7 @@
             <kctl name="Ultrasound Custom Setting 4" value="1" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
-            <kctl name="Ultrasound Mode" value="0"  />
+            <kctl name="Ultrasound Mode" value="0" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
             <kctl name="Ultrasound Debug Mode" value="0" />
@@ -1361,7 +1356,7 @@
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
             <kctl name="Ultrasound Debug Mode" value="0" />
-            <kctl name="Ultrasound Mode" value="0"  />
+            <kctl name="Ultrasound Mode" value="0" />
             <kctl name="Ultrasound Log Level" value="3" />
         </path>
     </mixercontrol>
