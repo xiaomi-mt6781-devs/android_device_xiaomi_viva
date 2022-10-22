@@ -9,4 +9,3 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
 	$(foreach FLAVOR, user userdebug eng, arrow_viva-$(FLAVOR))
-
