@@ -382,6 +382,12 @@ PRODUCT_PACKAGES += \
     android.system.wifi.keystore@1.0.vendor \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
+
+# Wifi configs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/wifi/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/wifi/, $(notdir $(file))) )
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
