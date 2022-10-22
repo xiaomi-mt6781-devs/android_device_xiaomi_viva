@@ -323,6 +323,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# SEcure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2-service.p73 \
+    android.hardware.secure_element@1.2-service.p73.xml
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
