@@ -280,6 +280,11 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libstagefright_foundation.vendor
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781
