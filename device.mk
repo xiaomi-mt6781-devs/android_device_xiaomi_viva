@@ -472,6 +472,11 @@ PRODUCT_COPY_FILES += \
     $(foreach file,$(wildcard $(KERNEL_PATH)/modules/*), \
         $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/lib/modules/, $(notdir $(file))) )
 
+# Touchscreen firmware (for recovery)
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/vendor/firmware/goodix_firmware.bin:recovery/root/vendor/firmware/goodix_firmware.bin \
+    $(VENDOR_PATH)/vendor/firmware/goodix_cfg_group.bin:recovery/root/vendor/firmware/goodix_cfg_group.bin
+
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
 	hardware/xiaomi \
