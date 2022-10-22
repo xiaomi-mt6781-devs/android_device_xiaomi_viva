@@ -160,6 +160,16 @@ PRODUCT_PACKAGES += \
 	libavservices_minijail_vendor \
     libbluetooth_audio_session.vendor \
     tinymix
+
+# Binder
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    android.hidl.allocator@1.0 \
+    android.hidl.memory.block@1.0 \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
