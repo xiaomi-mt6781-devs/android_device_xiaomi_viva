@@ -1,3 +1,5 @@
+# Unpinned blobs from viva-user 12 SP1A.210812.016 V13.0.4.0.SGDMIXM release-keys
+
 # Audio
 -vendor/lib/libtinycompress.so
 -vendor/lib64/libtinycompress.so
@@ -15,7 +17,6 @@ vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.mt6785.so:vendor/lib/hw/audio.primary.mt6781.so|f8b15a55d8ba5fe4240a24b3ff81e6906e7cdfe5
 vendor/lib/hw/audio.r_submix.mt6781.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 
@@ -2347,3 +2348,6 @@ lib/libvsim-adaptor-client.so
 -system/priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Audio primary hardware module, from rosemary-user 12 SP1A.210812.016 V13.0.8.0.SKLMIXM release-keys
+vendor/lib/hw/audio.primary.mt6785.so:vendor/lib/hw/audio.primary.mt6781.so|f8b15a55d8ba5fe4240a24b3ff81e6906e7cdfe5
