@@ -457,7 +457,8 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayViva \
 	SettingsResOverlayViva \
     SystemUIOverlayViva \
-    TelephonyOverlayViva
+    TelephonyOverlayViva \
+	CarrierConfigOverlayViva
 
 # FSTab
 PRODUCT_PACKAGES += \
