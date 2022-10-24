@@ -456,7 +456,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayViva \
 	SettingsResOverlayViva \
-    SystemUIOverlayViva
+    SystemUIOverlayViva \
+    TelephonyOverlayViva
 
 # FSTab
 PRODUCT_PACKAGES += \
@@ -496,6 +497,16 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/vendor/firmware/goodix_firmware.bin:recovery/root/vendor/firmware/goodix_firmware.bin \
     $(VENDOR_PATH)/vendor/firmware/goodix_cfg_group.bin:recovery/root/vendor/firmware/goodix_cfg_group.bin
 
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
 	hardware/xiaomi \
@@ -503,3 +514,4 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
+ 
