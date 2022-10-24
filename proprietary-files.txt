@@ -13,29 +13,13 @@ vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
-vendor/lib64/libaudiocompensationfilterc.so
-vendor/lib64/libaudiocompensationfilter_vendor.so
-vendor/lib64/libaudiocomponentenginec.so
-vendor/lib64/libaudiocomponentengine_vendor.so
-vendor/lib64/libaudiocustparam_vendor.so
-vendor/lib64/libaudiodcrflt_vendor.so
-vendor/lib64/libaudiofmtconv.so
-vendor/lib64/libaudioloudc.so
-vendor/lib64/libaudioprimarydevicehalifclient.so
-vendor/lib64/libaudiotoolkit_vendor.so
-vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.mt6781.so
+vendor/lib/hw/audio.primary.mt6785.so:vendor/lib/hw/audio.primary.mt6781.so|f8b15a55d8ba5fe4240a24b3ff81e6906e7cdfe5
 vendor/lib/hw/audio.r_submix.mt6781.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib64/hw/audio.primary.mt6781.so
-vendor/lib64/hw/audio.r_submix.mt6781.so
-vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
 # Audio-configs
-
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
@@ -1081,7 +1065,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.default.so
-vendor/lib64/hw/sound_trigger.primary.default.so
 
 # Media
 vendor/bin/hw/android.hardware.media.omx@1.0-service
