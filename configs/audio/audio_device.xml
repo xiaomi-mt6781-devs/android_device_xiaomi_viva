@@ -1708,20 +1708,19 @@
             <kctl name="UL5_CH2 ADDA_UL_CH2" value="0" />
         </path>
         <path name="ultrasound-proximity" value="turnon">
-            <kctl name="Ultrasound Mode" value="910" />
+            <kctl name="Ultrasound Mode" value="1075" />
             <kctl name="Ultrasound Custom Setting 4" value="1" />
-            <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
             <kctl name="Ultrasound Mode" value="0" />
-            <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
-            <kctl name="Ultrasound Mode" value="911" />
-            <kctl name="Ultrasound Custom Setting 4" value="1" />
+            <kctl name="Ultrasound Debug Mode" value="0" />
+            <kctl name="Ultrasound Mode" value="1076" />
             <kctl name="Ultrasound Log Level" value="3" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
+            <kctl name="Ultrasound Debug Mode" value="0" />
             <kctl name="Ultrasound Mode" value="0" />
             <kctl name="Ultrasound Log Level" value="3" />
         </path>
@@ -1749,9 +1748,5 @@
             <kctl name="UL5_CH1 ADDA_UL_CH1" value="0" />
             <kctl name="UL5_CH2 ADDA_UL_CH2" value="0" />
         </path>
-        <path name="ultrasound-proximity" value="turnon"></path>
-        <path name="ultrasound-proximity" value="turnoff"></path>
-        <path name="ultrasound-proximity-speaker" value="turnon"></path>
-        <path name="ultrasound-proximity-speaker" value="turnoff"></path>
     </mixercontrol>
 </root>
