@@ -474,6 +474,11 @@ PRODUCT_PACKAGES += \
     init_connectivity.rc \
     ueventd.mt6781.rc
 
+# Seccomp
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/seccomp/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/, $(notdir $(file))) )
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/input/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
