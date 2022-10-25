@@ -7,6 +7,7 @@
 # Helpful vars
 DEVICE_PATH := device/xiaomi/viva
 KERNEL_PATH := device/xiaomi/viva-kernel
+CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Broken build rules
 BUILD_BROKEN_DUP_RULES := true
@@ -110,14 +111,14 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6781
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # VINTF
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
-PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
+PRODUCT_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
+TARGET_PRODUCT_PROP += $(CONFIGS_PATH)/props/product.prop
 
 # Vendor Security Patch level
 VENDOR_SECURITY_PATCH := 2022-02-05
