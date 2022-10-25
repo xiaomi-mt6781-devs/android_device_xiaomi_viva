@@ -136,8 +136,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
 	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
 	frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
-    $(LOCAL_PATH)/configs/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
-    $(LOCAL_PATH)/configs/permissions/com.fingerprints.fpmmi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.fpmmi.xml
+    $(LOCAL_PATH)/configs/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -181,7 +180,7 @@ PRODUCT_PACKAGES += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-mtkimpl \
+    android.hardware.boot@1.2-mtkimpl:64 \
     android.hardware.boot@1.2-mtkimpl.recovery
 
 # Bluetooth
@@ -193,16 +192,16 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@1.0.vendor \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.device@3.3.vendor \
-    android.hardware.camera.device@3.4.vendor \
-    android.hardware.camera.device@3.5.vendor \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.4.vendor \
-    android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.common@1.0.vendor:64 \
+    android.hardware.camera.device@1.0.vendor:64 \
+    android.hardware.camera.device@3.2.vendor:64 \
+    android.hardware.camera.device@3.3.vendor:64 \
+    android.hardware.camera.device@3.4.vendor:64 \
+    android.hardware.camera.device@3.5.vendor:64 \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.4.vendor:64 \
+    android.hardware.camera.provider@2.5.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
 
 # CAS
 PRODUCT_PACKAGES += \
@@ -210,16 +209,16 @@ PRODUCT_PACKAGES += \
 
 # Dumpstate
 PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.0.vendor \
-    android.hardware.dumpstate@1.1.vendor
+    android.hardware.dumpstate@1.0.vendor:64 \
+    android.hardware.dumpstate@1.1.vendor:64
 
 # Display
 PRODUCT_PACKAGES += \
     libhwc2on1adapter.vendor \
     libhwc2onfbadapter.vendor \
-    libdrm.vendor \
-    android.hardware.graphics.composer@2.1.vendor \
-    android.hardware.graphics.composer@2.1-resources.vendor
+    libdrm.vendor:64 \
+    android.hardware.graphics.composer@2.1.vendor:64 \
+    android.hardware.graphics.composer@2.1-resources.vendor:64
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -232,17 +231,17 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl:64
 
 # Gnss
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss.measurement_corrections@1.0.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor
+    android.hardware.gnss@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss.measurement_corrections@1.0.vendor:64 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
@@ -252,20 +251,20 @@ PRODUCT_PACKAGES += \
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
-    android.hardware.ir@1.0-impl
+    android.hardware.ir@1.0-impl:64
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0.vendor \
-    android.hardware.keymaster@4.0.vendor \
-    android.hardware.keymaster@4.1.vendor \
-    libkeymaster4.vendor \
-    libkeymaster41.vendor \
-    libkeymaster4_1support.vendor \
-    libkeymaster4support.vendor \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor \
-    libpuresoftkeymasterdevice.vendor
+    android.hardware.keymaster@3.0.vendor:64 \
+    android.hardware.keymaster@4.0.vendor:64 \
+    android.hardware.keymaster@4.1.vendor:64 \
+    libkeymaster4.vendor:64 \
+    libkeymaster41.vendor:64 \
+    libkeymaster4_1support.vendor:64 \
+    libkeymaster4support.vendor:64 \
+    libkeymaster_messages.vendor:64 \
+    libkeymaster_portable.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64
 
 # Light
 PRODUCT_PACKAGES += \
@@ -291,7 +290,7 @@ PRODUCT_PACKAGES += \
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl
+    android.hardware.memtrack@1.0-impl:64
 
 # Neural networks
 PRODUCT_PACKAGES += \
