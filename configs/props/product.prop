@@ -13,7 +13,6 @@ persist.sys.mms.compact_enable=true
 persist.sys.spc.enabled=true
 persist.sys.usb.config=none
 ro.com.google.acsa=true
-ro.com.google.gmsversion=12_202204
 ro.com.google.ime.system_lm_dir=product/usr/share/ime/google/d3_lms/
 ro.lmk.kill_timeout_ms=100
 ro.lmk.psi_complete_stall_ms=70
