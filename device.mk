@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # Props
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/props/*), \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/props/boardid/*), \
         $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/boardid_props/, $(notdir $(file))) )
 
 # Permissions
@@ -519,4 +519,3 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/viva/viva-vendor.mk)
- 
