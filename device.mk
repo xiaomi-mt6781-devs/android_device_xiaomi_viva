@@ -393,7 +393,8 @@ PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor \
     libruy.vendor \
 	libmemunreachable \
-	libmemunreachable.vendor
+	libmemunreachable.vendor \
+	libflatbuffers-cpp.vendor
 
 # MTK Interfaces
 PRODUCT_PACKAGES += \
