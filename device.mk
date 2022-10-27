@@ -241,7 +241,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor:64 \
     android.hardware.gnss.measurement_corrections@1.0.vendor:64 \
     android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
-    android.hardware.gnss.visibility_control@1.0.vendor:64
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+	android.hardware.gnss-V1-ndk.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
@@ -310,7 +311,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
-    android.hardware.power@1.2.vendor
+    android.hardware.power@1.2.vendor \
+	android.hardware.power-V2-ndk.vendor:64
 
 # Radio
 PRODUCT_PACKAGES += \
