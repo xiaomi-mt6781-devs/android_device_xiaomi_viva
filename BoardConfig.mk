@@ -147,7 +147,7 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 2
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
-#include device/mediatek/sepolicy_vndr/SEPolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
