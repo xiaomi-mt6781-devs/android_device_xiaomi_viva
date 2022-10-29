@@ -758,21 +758,6 @@ on property:sys.usb.config=acm_gs1gs3
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "2,4"
 
-# For ATM (Android Test Mode)
-on property:vendor.usb.clear=1 && property:sys.usb.configfs=1
-    write /config/usb_gadget/g1/UDC "none"
-    write /config/usb_gadget/g1/bDeviceClass 0
-    write /config/usb_gadget/g1/bDeviceSubClass 0
-    write /config/usb_gadget/g1/bDeviceProtocol 0
-    rm /config/usb_gadget/g1/configs/b.1/f1
-    rm /config/usb_gadget/g1/configs/b.1/f2
-    rm /config/usb_gadget/g1/configs/b.1/f3
-    rm /config/usb_gadget/g1/configs/b.1/f4
-    rm /config/usb_gadget/g1/configs/b.1/f5
-    rmdir /config/usb_gadget/g1/functions/rndis.gs4
-    write /sys/devices/platform/mt_usb/saving 0
-    setprop vendor.usb.clear 2
-
 # has permission issue when read from ${sys.usb.ffs.ready}
 on property:sys.usb.ffs.ready=0
    setprop vendor.usb.ffs.ready 0
