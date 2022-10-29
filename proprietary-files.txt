@@ -1125,7 +1125,6 @@ vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
 vendor/bin/epdg_wod
-vendor/bin/fpsgo
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/gbe
@@ -1217,7 +1216,6 @@ vendor/etc/init/bootperf.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/chipinfo_init.rc
 vendor/etc/init/dmc_core.rc
-vendor/etc/init/fpsgo.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gbe.rc
@@ -1229,10 +1227,8 @@ vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.connfem.rc
 vendor/etc/init/init.fmradio_drv.rc
-vendor/etc/init/init.fpsgo.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.md_apps.rc
-vendor/etc/init/init.udc_lib.rc
 vendor/etc/init/init.viva.se.rc
 vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_imsm_93.rc
