@@ -23,6 +23,7 @@ ro.kernel.zio=38,108,105,16
 ro.support_one_handed_mode=true
 ro.vendor.have_aee_feature=0
 ro.vendor.customer_logpath=/data
+ro.logd.kernel=false
 
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
