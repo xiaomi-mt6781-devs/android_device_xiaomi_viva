@@ -31,7 +31,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # OTA Asserts
-TARGET_OTA_ASSERT_DEVICE := viva
+TARGET_OTA_ASSERT_DEVICE := viva,vida
 
 # Platform / Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := viva
