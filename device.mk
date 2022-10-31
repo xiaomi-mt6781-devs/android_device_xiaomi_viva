@@ -453,7 +453,8 @@ PRODUCT_PACKAGES += \
 
 # FSTab
 PRODUCT_PACKAGES += \
-    fstab.mt6781
+    fstab.mt6781 \
+	fstab.mt6781_ramdisk
 
 # Init
 PRODUCT_PACKAGES += \
