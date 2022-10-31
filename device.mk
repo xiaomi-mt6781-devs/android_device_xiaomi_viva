@@ -428,6 +428,10 @@ PRODUCT_PACKAGES += \
 	TetheringOverlayViva \
 	WifiOverlayViva
 
+# Lineage-Specific Overlays
+PRODUCT_PACKAGES += \
+	ApertureOverlayViva
+
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781 \
