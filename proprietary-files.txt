@@ -1103,7 +1103,6 @@ vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
 vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
 
 # Misc
-vendor/bin/AgentTest
 vendor/bin/atcid
 vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
