@@ -818,7 +818,6 @@ vendor/lib/hw/sound_trigger.primary.default.so
 # Media
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
--vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
@@ -826,8 +825,6 @@ vendor/lib64/libstagefrighthw.so
 
 # Mediatek
 -vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/bin/hw/vendor.mediatek.hardware.charge@1.0-service
@@ -837,7 +834,6 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/init/vendor.mediatek.hardware.charge@1.0-service.rc
