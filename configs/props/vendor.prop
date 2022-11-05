@@ -258,9 +258,6 @@ ro.vendor.pq.mtk_ultra_resolution_support=1
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.pref_scale_enable_cfg=1
 
-# Log tags (aka STFU)
-persist.log.tag.gralloc4=S
-
 # Userspace reboots
 init.userspace_reboot.is_supported=true
 

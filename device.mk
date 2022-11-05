@@ -215,9 +215,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwc2on1adapter.vendor \
     libhwc2onfbadapter.vendor \
-    libdrm.vendor:64 \
-    android.hardware.graphics.composer@2.1.vendor:64 \
-    android.hardware.graphics.composer@2.1-resources.vendor:64
+    libdrm.vendor \
+	android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1.vendor \
+    android.hardware.graphics.composer@2.1-resources.vendor
 
 # VNDK 32 libs
 PRODUCT_COPY_FILES += \
