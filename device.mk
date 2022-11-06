@@ -313,6 +313,11 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.pn8x \
     com.android.nfc_extras
 
+# NFC/SE configs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/nfc/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
