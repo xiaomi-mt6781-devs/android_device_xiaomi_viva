@@ -206,11 +206,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
-# Dumpstate
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.0.vendor:64 \
-    android.hardware.dumpstate@1.1.vendor:64
-
 # Display
 PRODUCT_PACKAGES += \
     libhwc2on1adapter.vendor \
