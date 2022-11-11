@@ -76,6 +76,7 @@ ro.vendor.mtk_aal_support=1
 ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
+debug.sf.enable_gl_backpressure=1
 debug.sf.early.app.duration=20000000
 debug.sf.early.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
