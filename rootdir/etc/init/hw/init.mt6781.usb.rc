@@ -911,17 +911,3 @@ on property:vendor.usb.printk=*
 on property:persist.vendor.usb.printk=*
 	setprop vendor.usb.printk ${persist.vendor.usb.printk}
 
-on property:vendor.usb.testmode=0
-	write /proc/mtk_usb/testmode "0"
-on property:vendor.usb.testmode=1
-	write /proc/mtk_usb/testmode "test SE0 NAK"
-on property:vendor.usb.testmode=2
-	write /proc/mtk_usb/testmode "test J"
-on property:vendor.usb.testmode=3
-	write /proc/mtk_usb/testmode "test K"
-on property:vendor.usb.testmode=4
-	write /proc/mtk_usb/testmode "test packet"
-### PLATFORM VARIANT, cat $rc_file | grep write | sort | grep -vE "android0|usb20_phy" | awk '{print $2}' | uniq ###
-on property:ro.factory_mode=1 && property:sys.boot_completed=1
-        setprop sys.usb.config acm_gs0
-
