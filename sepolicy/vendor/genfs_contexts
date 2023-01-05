@@ -1,0 +1,30 @@
+# Health
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0051/power_supply/ln8000-standalone   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0051/power_supply/ln8000-standalone-2 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0055/power_supply/bms/                u:object_r:sysfs_batteryinfo:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/11015000.spi5/spi_master/spi5/spi5.0/fingerdown_wait u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/11015000.spi5/spi_master/spi5/spi5.0/wakeup_enable u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/11015000.spi5/spi_master/spi5/spi5.0/clk_enable u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/11015000.spi5/spi_master/spi5/spi5.0/irq u:object_r:sysfs_fingerprint:s0
+
+# Graphics
+genfscon sysfs /devices/platform/14000000.dispsys_config/drm/card0/card0-DSI-1/panel_event u:object_r:vendor_sysfs_graphics:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0051/power_supply/ln8000-standalone/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0051/power_supply/ln8000-standalone-2/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11015000.spi5/spi_master/spi5/spi5.0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/rtc/rtc0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-004e/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-004e/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0051/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11016000.i2c5/i2c-5/5-0051/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0055/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-006a/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0055/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1100f000.i2c3/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
+

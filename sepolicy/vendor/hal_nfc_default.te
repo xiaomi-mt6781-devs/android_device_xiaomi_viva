@@ -1,0 +1,4 @@
+# Allow NFC Hal to manage /data/vendor/nfc
+allow hal_nfc_default nfc_data_vendor_file:dir rw_dir_perms;
+allow hal_nfc_default nfc_data_vendor_file:file { rw_file_perms create_file_perms };
+

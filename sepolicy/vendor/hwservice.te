@@ -1,0 +1,3 @@
+# Charge
+type mtk_hal_charge_hwservice, hwservice_manager_type;
+

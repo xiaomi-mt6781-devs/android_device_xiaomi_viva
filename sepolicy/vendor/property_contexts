@@ -1,0 +1,40 @@
+# Audio
+vendor.audio.voice.receiver.status u:object_r:vendor_mtk_audiohal_prop:s0
+ro.vendor.audio.         u:object_r:vendor_mtk_audiohal_prop:s0
+
+# Camera
+persist.vendor.camera.cam.list          u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.multicam.list     u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.mi.module.info    u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.mi.module.infoext u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera.mi.dualcal.state  u:object_r:vendor_mtk_camera_prop:s0
+
+vendor.camera.                          u:object_r:vendor_mtk_camera_prop:s0
+
+# Fingerprint
+persist.vendor.sys.fp.info          u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.vendor        u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.module        u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.uid           u:object_r:vendor_fp_prop:s0
+ro.boot.fpsensor              u:object_r:vendor_fp_prop:s0
+sys.fp.vendor u:object_r:vendor_fp_prop:s0
+
+# Thermal
+vendor.sys.thermal.                      u:object_r:vendor_thermal_normal_prop:s0
+
+# sno
+ro.vendor.oem.sno          u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.psno         u:object_r:vendor_deviceid_prop:s0
+
+# imei prop
+persist.vendor.radio.imei      u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.imei             u:object_r:vendor_deviceid_prop:s0   
+persist.vendor.radio.meid      u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.meid             u:object_r:vendor_deviceid_prop:s0
+ro.ril.oem.wifimac             u:object_r:vendor_deviceid_prop:s0
+ro.ril.oem.btmac               u:object_r:vendor_deviceid_prop:s0
+ro.vendor.ril.oem.btmac        u:object_r:vendor_deviceid_prop:s0
+
+# radio
+odm.ril.radio.status.sim1 u:object_r:radio_prop:s0
+odm.ril.radio.status.sim2 u:object_r:radio_prop:s0

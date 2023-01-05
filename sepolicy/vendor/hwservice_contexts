@@ -1,0 +1,12 @@
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                        u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpnfclegacy::INxpNfcLegacy            u:object_r:hal_nfc_hwservice:s0
+
+# Charge
+vendor.mediatek.hardware.charge::ICharge u:object_r:mtk_hal_charge_hwservice:s0
+
+# Fingerprint
+com.fingerprints.extension::IFingerprintEngineering          u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest           u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintNavigation           u:object_r:hal_fingerprint_hwservice:s0
+
