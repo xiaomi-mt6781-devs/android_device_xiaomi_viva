@@ -149,8 +149,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
 
 # VNDK
 BOARD_VNDK_VERSION := current
