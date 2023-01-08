@@ -215,5 +215,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.log.tag.CCodec=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.C2Store=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.MDP=$(VENDOR_LOG_LEVEL) \
-	persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL)
+	persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.C2MtkBufferManager=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.CCodecBuffers=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.VPUD=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.ConstraintSet=$(VENDOR_LOG_LEVEL)
 
