@@ -3,4 +3,9 @@ ro.product.vendor.model=2201116TI
 ro.product.product.model=2201116TI
 ro.product.odm.model=2201116TI
 
+ro.build.product=vida
 ro.product.device=vida
+ro.product.board=vida
+ro.product.system.device=vida
+ro.product.vendor.device=vida
+
