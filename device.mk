@@ -298,6 +298,10 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libstagefright_foundation.vendor
 
+# Media (OMX)
+PRODUCT_PACKAGES += \
+	android.hardware.media.omx@1.0-service
+
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
