@@ -160,8 +160,7 @@ PRODUCT_PACKAGES += \
     libalsautils.vendor \
     libaudiofoundation.vendor \
     libavservices_minijail.vendor \
-    libbluetooth_audio_session.vendor \
-    tinymix
+    libbluetooth_audio_session.vendor
 
 # In call service
 PRODUCT_PACKAGES += \
