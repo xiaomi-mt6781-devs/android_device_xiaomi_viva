@@ -838,7 +838,7 @@ vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_1_mediatek.xml
 
 # Media-Hardware
 vendor/lib/libstagefrighthw.so
@@ -1096,7 +1096,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Vintf (MEDIATEK)
--vendor/etc/vintf/manifest/gnss-default.xml
+-vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mediatek.xml
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml
 -vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
