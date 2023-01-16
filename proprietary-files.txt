@@ -1206,7 +1206,6 @@ vendor/bin/starter
 vendor/bin/stp_dump3
 vendor/bin/stroke
 vendor/bin/teei_daemon
-vendor/bin/vib_cal
 vendor/bin/volte_clientapi_ua
 vendor/bin/volte_imcb
 vendor/bin/volte_imsm_93
