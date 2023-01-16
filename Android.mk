@@ -27,15 +27,16 @@ VULKAN_SYMLINKS := \
 
 $(VENDOR_LIB_LINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) echo "Linking $(notdir $@)"
-	@ln -svf $(TARGET_BOARD_PLATFORM)/$(notdir $@) $@
+	@ln -sf $(TARGET_BOARD_PLATFORM)/$(notdir $@) $@
 
 $(GATEKEEPER_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) echo "Linking $@"
-	@ln -svf libSoftGatekeeper.so $@
+	@ln -sf libSoftGatekeeper.so $@
 
 $(VULKAN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@ln -svf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
-	@ln -svf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
+	$(hide) echo "Linking vulkan libs"
+	@ln -sf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
+	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.$(TARGET_BOARD_PLATFORM).so
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_LIB_LINKS) $(GATEKEEPER_SYMLINKS) $(VULKAN_SYMLINKS)
 
