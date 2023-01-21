@@ -2069,10 +2069,12 @@ lib64/libvcodec_capenc.so
 lib64/libvt_avsync.so
 lib64/libmtk_vt_wrapper.so
 lib64/libvsim-adaptor-client.so
--system/priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# Patched IMSService APK, from viva-user 12 SP1A.210812.016 V13.0.5.0.SGDMIXM release-keys
+# https://github.com/xiaomi-mt6781-devs/ImsService
+-system/priv-app/ImsService/ImsService.apk|c4dfdba6e6031a8d3f81a49749b6507e3ba9c09d
 
 # Audio primary hardware module, from rosemary-user 12 SP1A.210812.016 V13.0.8.0.SKLMIXM release-keys
 vendor/lib/hw/audio.primary.mt6785.so:vendor/lib/hw/audio.primary.mt6781.so|f8b15a55d8ba5fe4240a24b3ff81e6906e7cdfe5
