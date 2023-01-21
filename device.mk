@@ -159,10 +159,10 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audio_policy.stub \
-    libalsautils.vendor \
+    libalsautils \
     libaudiofoundation.vendor \
     libavservices_minijail.vendor \
-    libbluetooth_audio_session.vendor
+    libbluetooth_audio_session
 
 # In call service
 PRODUCT_PACKAGES += \
@@ -209,8 +209,8 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libhwc2on1adapter.vendor \
-    libhwc2onfbadapter.vendor \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
     libdrm.vendor \
 	android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1.vendor \
@@ -381,7 +381,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-	android.hardware.themral@1.0-impl \
+	android.hardware.thermal@1.0-impl \
     android.hardware.thermal@2.0.vendor
 
 # USB
