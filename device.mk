@@ -225,11 +225,11 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-	android.hardware.drm@1.0.vendor \
-	android.hardware.drm@1.1.vendor \
-	android.hardware.drm@1.2.vendor \
-	android.hardware.drm@1.3.vendor \
-	android.hardware.drm@1.4.vendor \
+	android.hardware.drm@1.0.vendor:64 \
+	android.hardware.drm@1.1.vendor:64 \
+	android.hardware.drm@1.2.vendor:64 \
+	android.hardware.drm@1.3.vendor:64 \
+	android.hardware.drm@1.4.vendor:64 \
     android.hardware.drm-service.clearkey
 
 # Fingerprint
@@ -311,10 +311,10 @@ PRODUCT_PACKAGES += \
 
 # Neural networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.0.vendor \
-    android.hardware.neuralnetworks@1.1.vendor \
-    android.hardware.neuralnetworks@1.2.vendor \
-    android.hardware.neuralnetworks@1.3.vendor
+    android.hardware.neuralnetworks@1.0.vendor:64 \
+    android.hardware.neuralnetworks@1.1.vendor:64 \
+    android.hardware.neuralnetworks@1.2.vendor:64 \
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -338,17 +338,17 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0.vendor \
-    android.hardware.radio@1.1.vendor \
-    android.hardware.radio@1.2.vendor \
-    android.hardware.radio@1.3.vendor \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.0.vendor \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.config@1.3.vendor
+    android.hardware.radio@1.0.vendor:64 \
+    android.hardware.radio@1.1.vendor:64 \
+    android.hardware.radio@1.2.vendor:64 \
+    android.hardware.radio@1.3.vendor:64 \
+    android.hardware.radio@1.4.vendor:64 \
+    android.hardware.radio@1.5.vendor:64 \
+    android.hardware.radio@1.6.vendor:64 \
+    android.hardware.radio.config@1.0.vendor:64 \
+    android.hardware.radio.config@1.1.vendor:64 \
+    android.hardware.radio.config@1.2.vendor:64 \
+    android.hardware.radio.config@1.3.vendor:64
 
 # Renderscript
 PRODUCT_PACKAGES += \
@@ -362,7 +362,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.sensors-service.multihal \
     libsensorndkbridge
 
@@ -376,23 +376,23 @@ PRODUCT_PACKAGES += \
 
 # TetherOffload
 PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    android.hardware.tetheroffload.config@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.0.vendor:64 \
+    android.hardware.tetheroffload.control@1.1.vendor:64
 
 # Thermal
 PRODUCT_PACKAGES += \
-	android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@2.0.vendor
+	android.hardware.thermal@1.0-impl:64 \
+    android.hardware.thermal@2.0.vendor:64
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0.vendor \
-    android.hardware.usb@1.1.vendor \
-    android.hardware.usb@1.2.vendor \
-    android.hardware.usb@1.3.vendor \
-    android.hardware.usb.gadget@1.0.vendor \
-    android.hardware.usb.gadget@1.1.vendor
+    android.hardware.usb@1.0.vendor:64 \
+    android.hardware.usb@1.1.vendor:64 \
+    android.hardware.usb@1.2.vendor:64 \
+    android.hardware.usb@1.3.vendor:64 \
+    android.hardware.usb.gadget@1.0.vendor:64 \
+    android.hardware.usb.gadget@1.1.vendor:64
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -400,8 +400,8 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64 \
     android.hardware.wifi@1.0-service-lazy.viva \
     wpa_supplicant \
     hostapd
