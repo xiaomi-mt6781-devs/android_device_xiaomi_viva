@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
+    android.hardware.health@1.0.vendor \
 	android.hardware.health-service.mt6781 \
 	android.hardware.health-service.mt6781-recovery
 
