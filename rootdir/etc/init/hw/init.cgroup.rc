@@ -7,8 +7,7 @@ on post-fs
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "3 100"
 
 on init
-
- # Create energy-aware scheduler tuning nodes
+    # Create energy-aware scheduler tuning nodes
     mkdir /dev/stune/foreground
     mkdir /dev/stune/background
     mkdir /dev/stune/top-app

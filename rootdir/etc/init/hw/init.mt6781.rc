@@ -3,9 +3,7 @@
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
 import /vendor/etc/init/hw/init.project.rc
-import /vendor/etc/init/hw/init.volte.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
-import /vendor/etc/init/hw/init.stnfc.rc
 import /vendor/etc/init/hw/init.cgroup.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
@@ -56,7 +54,6 @@ on charger
     mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
-    start spm_script
     chmod 0666 /dev/kmsg
     chmod 0775 /mnt/vendor
     mkdir /mnt/vendor/nvcfg
@@ -139,9 +136,6 @@ on late-fs
 
 on post-fs
     write /proc/bootprof "INIT:post-fs"
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
@@ -692,16 +686,6 @@ on post-fs-data
     chmod 660 /dev/alarm
     chown root system /dev/alarm
 
-    #EM of MT6360
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmu.5-0034/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmic.5-001a/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmu.5-0034/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmic.5-001a/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/reg_addr
-
 # End of adding by MTK drivers
 # -----------------------
 
@@ -738,8 +722,6 @@ on boot
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
     chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-    chown root   system /sys/kernel/debug/binder/transaction_log_enable
-    chown root   system /sys/kernel/debug/binder/perf_evalue
     chown system system /sys/devices/system/cpu/rq-stats/htasks_thresh
     chmod 0660 /sys/devices/system/cpu/rq-stats/htasks_thresh
     chown system system /sys/devices/system/cpu/rq-stats/avg_htasks_thresh
@@ -898,29 +880,6 @@ on boot
     chown system radio /dev/ttyGS1
 
     stop console
-
-on property:vold.decrypt=trigger_reset_main
-    write /proc/bootprof "INIT:vold.decrypt=trigger_reset_main"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
-on property:vold.decrypt=trigger_post_fs_data
-    write /proc/bootprof "INIT:vold.decrypt=trigger_post_fs_data"
-
-on property:vold.decrypt=trigger_restart_min_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_min_framework"
-    start nvram_daemon
-    start msensord
-
-on property:vold.decrypt=trigger_restart_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_framework"
-    start nvram_daemon
-    start msensord
-
-on property:vold.decrypt=trigger_shutdown_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_shutdown_framework"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
 
 # Stop bootprof
 on property:sys.boot_completed=1

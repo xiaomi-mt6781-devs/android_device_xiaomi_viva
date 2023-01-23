@@ -11,7 +11,8 @@ on fs
     symlink /dev/block/sdb /dev/block/mmcblk0boot1
     symlink /dev/block/mmcblk0boot0 /dev/block/platform/bootdevice/by-name/preloader_a
     symlink /dev/block/mmcblk0boot1 /dev/block/platform/bootdevice/by-name/preloader_b
-    # Fix OF installer
+    
+    # Useful for some installers
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
     # Support A/B feature for combo emmc and ufs OTA update
