@@ -19,4 +19,4 @@ PRODUCT_NAME := lineage_viva
 PRODUCT_DEVICE := viva
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 11 Pro 4G
+PRODUCT_MODEL := Redmi Note 11 Pro (4G)
