@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2022 ArrowOS
+# Copyright (C) 2023 LineageOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -47,8 +48,8 @@ TARGET_PREBUILT_DTB := $(KERNEL_PATH)/dtb.img
 
 # Kernel / Boot Image
 BOARD_KERNEL_CMDLINE := \
-	bootopt=64S3,32N2,64N2 \
-	video=HDMI-A-1:1280x800@60
+    bootopt=64S3,32N2,64N2 \
+    video=HDMI-A-1:1280x800@60
 
 BOARD_BOOT_HEADER_VERSION := 2
 

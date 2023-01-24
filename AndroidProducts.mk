@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/lineage_viva.mk
+    $(LOCAL_DIR)/lineage_viva.mk
 
 COMMON_LUNCH_CHOICES := \
-	$(foreach FLAVOR, user userdebug eng, lineage_viva-$(FLAVOR))
+    $(foreach FLAVOR, user userdebug eng, lineage_viva-$(FLAVOR))

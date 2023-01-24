@@ -29,20 +29,20 @@ PRODUCT_TARGET_VNDK_VERSION := 32
 
 ## FastbootD
 PRODUCT_PACKAGES += \
-	fastbootd \
-	android.hardware.fastboot@1.1-impl-mock
+    fastbootd \
+    android.hardware.fastboot@1.1-impl-mock
 
 # A/B
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS := \
-	boot \
-	system \
-	vendor \
-	product \
+    boot \
+    system \
+    vendor \
+    product \
     vbmeta \
     vbmeta_system \
-	vbmeta_vendor
+    vbmeta_vendor
 
 PRODUCT_PACKAGES += \
     update_engine \
@@ -133,13 +133,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-	frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
-	frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-	frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
-	frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-	frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
     $(LOCAL_PATH)/configs/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
-	$(LOCAL_PATH)/configs/permissions/com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.xml
+    $(LOCAL_PATH)/configs/permissions/com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     audio.bluetooth.default \
-	android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -213,7 +213,7 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libdrm.vendor \
-	android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor
 
@@ -221,15 +221,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
-	prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v32.so
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v32.so
 
 # DRM
 PRODUCT_PACKAGES += \
-	android.hardware.drm@1.0.vendor:64 \
-	android.hardware.drm@1.1.vendor:64 \
-	android.hardware.drm@1.2.vendor:64 \
-	android.hardware.drm@1.3.vendor:64 \
-	android.hardware.drm@1.4.vendor:64 \
+    android.hardware.drm@1.0.vendor:64 \
+    android.hardware.drm@1.1.vendor:64 \
+    android.hardware.drm@1.2.vendor:64 \
+    android.hardware.drm@1.3.vendor:64 \
+    android.hardware.drm@1.4.vendor:64 \
     android.hardware.drm-service.clearkey
 
 # Fingerprint
@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
 
 # FMRadio
 PRODUCT_PACKAGES += \
-	MtkFMRadio
+    MtkFMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -254,13 +254,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor:64 \
     android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
     android.hardware.gnss.visibility_control@1.0.vendor:64 \
-	android.hardware.gnss-V1-ndk.vendor:64
+    android.hardware.gnss-V1-ndk.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor \
-	android.hardware.health-service.mt6781 \
-	android.hardware.health-service.mt6781-recovery
+    android.hardware.health-service.mt6781 \
+    android.hardware.health-service.mt6781-recovery
 
 # IR
 PRODUCT_PACKAGES += \
@@ -295,15 +295,15 @@ PRODUCT_PACKAGES += \
     libstagefright_bufferpool@2.0.1.vendor \
     libstagefright_enc_common.vendor \
     libstagefright_flacdec.vendor \
-	libcodec2_hidl@1.0.vendor \
-	libcodec2_hidl@1.1.vendor \
-	libcodec2_hidl@1.2.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libstagefright_foundation.vendor
 
 # Media (OMX)
 PRODUCT_PACKAGES += \
-	android.hardware.media.omx@1.0-service
+    android.hardware.media.omx@1.0-service
 
 # Memtrack
 PRODUCT_PACKAGES += \
@@ -332,10 +332,10 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-	android.hardware.power@1.0.vendor \
+    android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
-	android.hardware.power-V2-ndk.vendor:64
+    android.hardware.power-V2-ndk.vendor:64
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -357,9 +357,9 @@ PRODUCT_PACKAGES += \
 
 # Secure element
 PRODUCT_PACKAGES += \
-	android.hardware.secure_element@1.0.vendor:64 \
-	android.hardware.secure_element@1.1.vendor:64 \
-	android.hardware.secure_element@1.2.vendor:64
+    android.hardware.secure_element@1.0.vendor:64 \
+    android.hardware.secure_element@1.1.vendor:64 \
+    android.hardware.secure_element@1.2.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -383,7 +383,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-	android.hardware.thermal@1.0-impl:64 \
+    android.hardware.thermal@1.0-impl:64 \
     android.hardware.thermal@2.0.vendor:64
 
 # USB
@@ -397,7 +397,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-	android.hardware.vibrator.service.mt6781
+    android.hardware.vibrator.service.mt6781
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -416,28 +416,28 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtextclassifier_hash.vendor \
     libruy.vendor \
-	libmemunreachable \
-	libmemunreachable.vendor \
-	libflatbuffers-cpp.vendor
+    libmemunreachable \
+    libmemunreachable.vendor \
+    libflatbuffers-cpp.vendor
 
 # Device overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayViva \
-	SettingsResOverlayViva \
+    SettingsResOverlayViva \
     SystemUIOverlayViva \
     TelephonyOverlayViva \
-	CarrierConfigOverlayViva \
-	TetheringOverlayViva \
-	WifiOverlayViva
+    CarrierConfigOverlayViva \
+    TetheringOverlayViva \
+    WifiOverlayViva
 
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
-	ApertureOverlayViva
+    ApertureOverlayViva
 
 # FSTab
 PRODUCT_PACKAGES += \
     fstab.mt6781 \
-	fstab.mt6781_ramdisk
+    fstab.mt6781_ramdisk
 
 # Init
 PRODUCT_PACKAGES += \
@@ -493,8 +493,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH) \
-	hardware/xiaomi \
+    $(LOCAL_PATH) \
+    hardware/xiaomi \
     vendor/nxp/nfc
 
 # Add vendor log tags
