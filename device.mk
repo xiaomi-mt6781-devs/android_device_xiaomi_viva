@@ -75,13 +75,11 @@ TARGET_SCREEN_DENSITY := 440
 
 # Audio configs
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/audio/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Media configs
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/media/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -89,8 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Props
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/props/boardid/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/boardid_props/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*.prop,$(LOCAL_PATH)/configs/props/boardid/,$(TARGET_COPY_OUT_VENDOR)/etc/boardid_props)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -319,8 +316,7 @@ PRODUCT_PACKAGES += \
 
 # NFC/SE configs
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/nfc/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Power
 PRODUCT_PACKAGES += \
@@ -402,8 +398,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi configs
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/wifi/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/wifi/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Other common
 PRODUCT_PACKAGES += \
@@ -447,13 +442,11 @@ PRODUCT_PACKAGES += \
 
 # Seccomp
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/seccomp/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp/,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 # Power/Perf configs
 PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(LOCAL_PATH)/configs/perf/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Input
 PRODUCT_COPY_FILES += \
