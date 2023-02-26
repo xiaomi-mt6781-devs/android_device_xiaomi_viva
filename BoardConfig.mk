@@ -11,9 +11,6 @@ KERNEL_PATH := device/xiaomi/viva-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Broken build rules
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Architecture flags
