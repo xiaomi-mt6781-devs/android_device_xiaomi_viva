@@ -5,7 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-KERNEL_PATH := device/xiaomi/viva-kernel
 VENDOR_PATH := vendor/xiaomi/viva/proprietary
 
 # Include GSI keys
@@ -465,11 +464,6 @@ PRODUCT_COPY_FILES += \
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/misc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Kernel prebuilt modules
-PRODUCT_COPY_FILES += \
-    $(foreach file,$(wildcard $(KERNEL_PATH)/modules/*), \
-        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/lib/modules/, $(notdir $(file))) )
 
 # Touchscreen firmware (for recovery)
 PRODUCT_COPY_FILES += \

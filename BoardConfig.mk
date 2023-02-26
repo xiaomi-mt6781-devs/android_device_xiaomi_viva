@@ -77,6 +77,10 @@ TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := nothing_important_here
 TARGET_KERNEL_SOURCE := kernel/xiaomi/viva-headers
 
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(foreach module,$(wildcard $(KERNEL_PATH)/modules/*.ko), \
+        $(module))
+
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
