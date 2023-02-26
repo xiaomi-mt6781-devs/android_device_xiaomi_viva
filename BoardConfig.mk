@@ -45,8 +45,7 @@ TARGET_PREBUILT_DTB := $(KERNEL_PATH)/dtb.img
 
 # Kernel / Boot Image
 BOARD_KERNEL_CMDLINE := \
-    bootopt=64S3,32N2,64N2 \
-    video=HDMI-A-1:1280x800@60
+    bootopt=64S3,32N2,64N2
 
 BOARD_BOOT_HEADER_VERSION := 2
 
