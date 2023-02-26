@@ -489,6 +489,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
+    hardware/mediatek \
     vendor/nxp/nfc
 
 # Add vendor log tags

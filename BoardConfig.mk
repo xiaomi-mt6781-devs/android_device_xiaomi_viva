@@ -157,6 +157,9 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 # Vendor RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Power HAL Ext
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-ext.cpp
+
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
