@@ -882,7 +882,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libMtkOmxGsmDec.so
 -vendor/lib/libMtkOmxMp3Dec.so
 -vendor/lib/libMtkSpeechEnh.so
--vendor/lib/libmtk_bsg.so
 -vendor/lib/libmtkares.so
 -vendor/lib/libmtkcutils.so
 -vendor/lib/libmtkhardware_legacy.so
@@ -935,7 +934,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libMtkSpeechEnh.so
 -vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 -vendor/lib64/libmtk-ril.so
--vendor/lib64/libmtk_bsg.so
 -vendor/lib64/libmtkares.so
 -vendor/lib64/libmtkcam.atmseventmgr.so
 -vendor/lib64/libmtkcam.eventcallback.so
