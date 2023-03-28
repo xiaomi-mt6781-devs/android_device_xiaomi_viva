@@ -477,7 +477,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
     hardware/mediatek \
-    vendor/nxp/nfc
+    vendor/nxp/nfc \
+    vendor/nxp/secure_element
 
 # Add vendor log tags
 include $(LOCAL_PATH)/configs/props/vendor_log_tags.mk
