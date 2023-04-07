@@ -230,7 +230,7 @@ PRODUCT_PACKAGES += \
 
 # FMRadio
 PRODUCT_PACKAGES += \
-    MtkFMRadio
+    FMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \

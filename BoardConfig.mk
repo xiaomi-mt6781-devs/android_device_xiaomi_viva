@@ -36,7 +36,7 @@ BOARD_VENDOR := xiaomi
 BOARD_HAS_MTK_HARDWARE := true
 
 # FMRadio
-BOARD_HAS_MTK_FM := true
+BOARD_HAVE_MTK_FM := true
 
 # Prebuilts
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
