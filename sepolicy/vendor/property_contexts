@@ -17,7 +17,6 @@ persist.vendor.sys.fp.vendor        u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.module        u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.uid           u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor              u:object_r:vendor_fp_prop:s0
-sys.fp.vendor u:object_r:vendor_fp_prop:s0
 
 # Thermal
 vendor.sys.thermal.                      u:object_r:vendor_thermal_normal_prop:s0
