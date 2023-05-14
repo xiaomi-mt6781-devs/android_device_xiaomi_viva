@@ -1,5 +1,6 @@
 //
 // Copyright (C) 2022 ArrowOS
+// Copyright (C) 2023 LineageOS
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -30,6 +31,13 @@ prebuilt_etc {
     src: "etc/init/hw/init.modem.rc",
     sub_dir: "init/hw",
     vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.nxpnfc.rc",
+    src: "etc/init/hw/init.nxpnfc.rc",
+    sub_dir: "init/hw",
+    vendor: true
 }
 
 prebuilt_etc {

@@ -1071,7 +1071,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 
 # NFC
--vendor/etc/init/init.viva.nfc.rc
 -vendor/lib64/libpn557_fw.so
 
 # Neural-networks
@@ -1240,7 +1239,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/init.fmradio_drv.rc
 -vendor/etc/init/init.gps_drv.rc
 -vendor/etc/init/init.md_apps.rc
--vendor/etc/init/init.viva.se.rc
 -vendor/etc/init/init.volte_imcb.rc
 -vendor/etc/init/init.volte_imsm_93.rc
 -vendor/etc/init/init.volte_md_status.rc

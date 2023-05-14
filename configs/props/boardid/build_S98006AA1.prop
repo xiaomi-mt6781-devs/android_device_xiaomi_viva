@@ -2,5 +2,7 @@ ro.product.system.model=2201116TG
 ro.product.vendor.model=2201116TG
 ro.product.product.model=2201116TG
 ro.product.odm.model=2201116TG
-
 ro.product.device=viva
+
+ro.boot.product.hardware.sku=nfc
+
