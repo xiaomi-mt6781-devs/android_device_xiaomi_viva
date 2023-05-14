@@ -10,9 +10,6 @@ DEVICE_PATH := device/xiaomi/viva
 KERNEL_PATH := device/xiaomi/viva-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
-# Broken build rules
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-
 # Architecture flags
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
