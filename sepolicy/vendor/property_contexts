@@ -25,15 +25,3 @@ vendor.sys.thermal.                      u:object_r:vendor_thermal_normal_prop:s
 ro.vendor.oem.sno          u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.psno         u:object_r:vendor_deviceid_prop:s0
 
-# imei prop
-persist.vendor.radio.imei      u:object_r:vendor_deviceid_prop:s0
-ro.vendor.oem.imei             u:object_r:vendor_deviceid_prop:s0   
-persist.vendor.radio.meid      u:object_r:vendor_deviceid_prop:s0
-ro.vendor.oem.meid             u:object_r:vendor_deviceid_prop:s0
-ro.ril.oem.wifimac             u:object_r:vendor_deviceid_prop:s0
-ro.ril.oem.btmac               u:object_r:vendor_deviceid_prop:s0
-ro.vendor.ril.oem.btmac        u:object_r:vendor_deviceid_prop:s0
-
-# radio
-odm.ril.radio.status.sim1 u:object_r:radio_prop:s0
-odm.ril.radio.status.sim2 u:object_r:radio_prop:s0
