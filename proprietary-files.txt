@@ -1159,7 +1159,7 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/mnld
 -vendor/bin/mrdump_tool
 -vendor/bin/mt6660_calibration
--vendor/bin/mtk_agpsd;NOCHECK
+-vendor/bin/mtk_agpsd
 -vendor/bin/mtk_pkm_service
 -vendor/bin/mtk_plpath_utils_ota
 -vendor/bin/muxreport
