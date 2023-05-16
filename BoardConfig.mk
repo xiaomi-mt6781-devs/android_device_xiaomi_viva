@@ -40,10 +40,15 @@ BOARD_HAVE_MTK_FM := true
 
 # Prebuilts
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/Image.gz
 BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Kernel / Boot Image
+
+# Kill lineage kernel build task while preserving kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_COPY_FILES += \
+    $(KERNEL_PATH)/Image.gz:kernel
+
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2
 
@@ -69,8 +74,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_KERNEL_CONFIG := nothing_important_here
-TARGET_KERNEL_SOURCE := kernel/xiaomi/viva-headers
+TARGET_KERNEL_SOURCE := device/xiaomi/viva-kernel/kernel-headers
 
 BOARD_VENDOR_KERNEL_MODULES := \
     $(foreach module,$(wildcard $(KERNEL_PATH)/modules/*.ko), \
