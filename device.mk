@@ -239,14 +239,7 @@ PRODUCT_PACKAGES += \
 
 # Gnss
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0.vendor:64 \
-    android.hardware.gnss@1.1.vendor:64 \
-    android.hardware.gnss@2.0.vendor:64 \
-    android.hardware.gnss@2.1.vendor:64 \
-    android.hardware.gnss.measurement_corrections@1.0.vendor:64 \
-    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
-    android.hardware.gnss.visibility_control@1.0.vendor:64 \
-    android.hardware.gnss-V1-ndk.vendor:64
+    android.hardware.gnss-service.mediatek
 
 # Health
 PRODUCT_PACKAGES += \

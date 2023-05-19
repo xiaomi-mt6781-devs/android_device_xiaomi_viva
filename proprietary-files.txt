@@ -805,10 +805,6 @@ vendor/firmware/wifi.cfg
 -system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
 
 # GPS
--vendor/bin/hw/android.hardware.gnss-service.mediatek
--vendor/etc/init/android.hardware.gnss-service.mediatek.rc
--vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
--vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 -vendor/lib64/hw/gps.default.so
 
 # Gatekeeper
@@ -1058,8 +1054,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0_vendor
 
 # Vintf (MEDIATEK)
--vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mediatek.xml
--vendor/etc/vintf/manifest/gnss@2.1-service.xml
 -vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 
