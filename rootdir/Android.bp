@@ -13,13 +13,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.connectivity.common.rc",
-    src: "etc/init/hw/init.connectivity.common.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init/hw/init.connectivity.rc",
     sub_dir: "init/hw",
@@ -64,13 +57,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.sensor_1_0.rc",
     src: "etc/init/hw/init.sensor_1_0.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "etc/init/hw/init_connectivity.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
