@@ -122,7 +122,9 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 # VINTF
 DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
 PRODUCT_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
 
 # Properties
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
